@@ -1,0 +1,173 @@
+.admin-wrapper {
+    padding: 20px 20px 20px 50px;
+
+    .admin-users-box {
+        width: 90%;
+
+        .users-header {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            color: #1d1d1d;
+        }
+
+        .user-search-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .user-table {
+            border-spacing: 0px;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+            border-radius: 6px;
+            user-select: none;
+
+            & tr:first-child {
+                background-color: #dbe2f0;
+
+                & th {
+                    padding: 0px 22px;
+                    // padding: 10px 22px;
+
+                    .table-head-text {
+                        font-family: "SF Pro Display";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #0b0c0e;
+                    }
+                }
+            }
+
+            & tr:nth-child(2) {
+                & td {
+                    padding-top: 14px;
+                }
+            }
+
+            & td {
+                padding: 10px 22px;
+                text-align: center;
+
+                .table-data-text {
+                    font-family: "SF Pro Display";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #5a657c;
+                }
+
+                .icons-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .edit-icon {
+                        color: #0182d0;
+                        height: 23px;
+                        cursor: pointer;
+                    }
+
+                    .delete-icon {
+                        color: #fa5171;
+                        height: 23px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .users-pagination-data-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 18px;
+
+            .sel-delete-btn {
+                background-color: #fa5171;
+                padding: 1% 2%;
+                border-radius: 25px;
+
+                .sel-delete-btn-text {
+                    color: #ffffff;
+                    font-family: "SF Pro Display";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .bottom-container-right {
+
+                display: flex;
+                align-items: center;
+
+                .users-pagination-text {
+                    font-family: "SF Pro Display";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #757575;
+                    margin-right: 34px;
+                    user-select: none;
+                }
+
+                .users-pagination-container {
+                    display: flex;
+                    align-items: center;
+
+                    & :first-child {
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                    }
+
+                    & :last-child {
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                    }
+
+                    .users-pagination {
+                        background: #ffffff;
+                        border: 1px solid #efefef;
+                        width: 36px;
+                        height: 36px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        .users-pagination-icon {
+                            height: 23px;
+                            color: #0182d0;
+                        }
+
+                        .users-pagination-content {
+                            font-family: "SF Pro Display";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #0182d0;
+                            user-select: none;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .selected {
+                            background-color: #0182d0;
+                            color: #ffffff;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

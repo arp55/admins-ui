@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import "./assets/fonts/SFProDisplay.ttf";
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

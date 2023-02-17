@@ -1,0 +1,80 @@
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .edit-modal-box {
+        box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.03);
+        border-radius: 8px;
+        width: fit-content;
+        padding: 20px;
+        min-width: 40%;
+
+        .edit-modal-header {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            color: #0b0c0e;
+            text-align: center;
+        }
+
+        .edit-modal-subtext {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #5a657c;
+            margin-top: 5.8%;
+        }
+
+        .edit-field {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #0b0c0e;
+            padding: 2% 3%;
+            border: 1px solid #dbe2f0;
+            border-radius: 4px;
+            margin-top: 1%;
+        }
+
+        .edit-btn-container {
+            @extend .display-flex;
+            justify-content: space-between;
+            margin-top: 24px;
+
+            .edit-btn {
+                flex: 0.49;
+                padding: 9px;
+                border: 1px solid #4e89fe;
+
+                .edit-btn-text {
+                    font-family: "SF Pro Display";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #4e89fe;
+                    text-transform: capitalize;
+                }
+
+                .edit-btn-text1 {
+                    color: #ffffff;
+                }
+            }
+
+            .edit-btn1 {
+                @extend .edit-btn;
+                background: #4e89fe;
+                border-radius: 4px;
+            }
+        }
+    }
+}
